@@ -43,8 +43,8 @@ public class maxRectangleSum {
                     Integer num = set.ceiling(curSum - k);
                     if (num != null) {
                         res = Math.max(res, curSum - num);
-                        set.add(curSum);
                     }
+                    set.add(curSum);
                 }
             }
         }
